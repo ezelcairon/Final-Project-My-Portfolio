@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height:  1.6;
+    color: #000000;
+    margin:  0;
+    padding:  0;
+    background-color: #ffffff;
+}
+
+/* Header Section */
+header {
+    background: #000000;
+    color: #e5ff00;
+    padding:  30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin:  0;
+}
+
+  header img {
+    border-radius:  50%;
+}
+
+header h2 {
+    margin:  0;
+    color: #e5ff00;
+    font-size:  1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+
+/* About Section */
+#about {
+    background: #000000;
+    color: #e5ff00;
+    padding:  40px;
+    text-align: center;
+}
+
+#about img {
+    width:  100%;
+    max-width:  400px;
+    display: block;
+    margin:  0 auto;
+    border-radius:  50%
+}
+
+/* Skills Section */
+#skills {
+    background: #000000;
+    color: #e5ff00;
+    padding:  40px;
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+    padding:  0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills ul li {
+    margin:  10px;
+    padding:  10px;
+    background: #000000;
+    border-radius:  3px;
+}
+
+/* Social Section */
+#social {
+    background: #000000;
+    padding:  40px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #e5ff00;
+    margin:  0  10px;
+    font-size:  24px;
+}
+
+.social-icons a:hover {
+    color: #e8491d;
+}
+
+/* Contact Section */
+#contact {
+    background: #000000;
+    padding:  40px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width:  100%;
+    padding:  10px;
+    margin:  10px  0;
+    border:  1px solid #ccc;
+}
+
+#contact form button {
+    background: #e8491d;
+    color: #ffffff;
+    padding:  10px  20px;
+    border: none;
+    cursor: pointer;
+    width:  100%;
+    max-width:  300px;
+}
+
+/* Footer Section */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width:  768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width:  150px;
+        height:  150px;
+        margin-bottom:  20px;
+    }
+
+    #skills ul li {
+        flex-basis:  100%;
+        margin-bottom:  10px;
+    }
+
+    #contact form {
+        width:  100%;
+    }
+
+    #contact form button {
+        max-width:  100%;
+    }
+}
